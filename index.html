@@ -1,0 +1,243 @@
+style{
+    * {
+  margin: 0 !important;
+  font-size: 20px;
+  font-family: Arial
+}
+#welcome-section{
+  height: 100vh;
+  background: #159957; 
+  background: -webkit-linear-gradient(to right, #159957, #155799); 
+  background: linear-gradient(to right, #159957, #155799);
+}
+
+#navbar{
+  position: fixed;
+  width: 100%;
+}
+ul{
+  background-color: #FFD23F;
+  list-style-type: none;
+  padding: 1.2em;
+  
+}
+li{
+  display: inline;
+}
+li a{
+  text-decoration: none;
+  color: #212738;
+  padding: 1.25em 20px;
+}
+li a:hover {
+  background-color: white;
+  color: #1B998B;
+}
+h1{
+  text-align: center;
+  margin: auto;
+  font-size: 3em;
+  font-family: Raleway, Arial;
+  color: #F08700;
+}
+#intro-text{
+  text-align: center;
+  margin: auto;
+  font-family: Arimo, Arial;
+  color: #FFB400;
+}
+#spaaace{
+  height: 50%;
+}
+#projects{
+  padding: 1.5em;
+  text-align: center;
+  background: rgb(255,210,63);
+background: linear-gradient(180deg, rgba(255,210,63,1) 0%, rgba(255,255,255,1) 76%, rgba(255,255,255,1) 100%);
+  
+}
+#display-projects{
+  display: grid;
+  grid-template-columns: 5vw 40vw 5vw 40vw;
+  grid-template-rows: 500px 30px 500px;
+}
+
+h2{
+  text-align: center;
+  Font-family: Thasadith;
+}
+#spaace{
+  height: 30px;
+}
+
+#project-name{
+  text-align: center;
+  text-decoration: none;
+  padding-bottom: 1.5em;
+  color: white;
+}
+#aproject{
+  background: rgb(21,153,87);
+background: linear-gradient(180deg, rgba(21,153,87,1) 0%, rgba(21,87,153,1) 100%);
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  
+}
+img{
+  width: 80%;
+  padding: 1.5em;
+  border-radius: 40px;
+}
+#contact{
+  height: 100vh;
+  background: #F49F0A;
+  text-align: center;
+  margin: auto;
+}
+#profile-link{
+  text-decoration: none;
+  padding: 1.5em;
+  color: white;
+}
+#profile-link:hover{
+  animation-name: move;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+@keyframes move {
+    100% {
+      color: #1B998B;
+      font-size: 1.2em;
+    }
+}
+
+#info{
+  font-size: 3em;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  #welcome-section{
+    height: 150vh;
+  }
+#display-projects{
+  display: flex;
+  flex-direction: column;
+}
+#aproject{
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  
+}
+#contact{
+  display: flex;
+  flex-direction: column;
+}
+#profile-link{
+  padding: 0.5em;
+}
+  
+#navbar{
+  position: fixed;
+  width: 40%;
+  opacity: 0.4;
+  
+}
+ul{
+  background-color: #FFD23F;
+  list-style-type: none;
+  padding: 0.5em;
+  
+  
+}
+li{
+  display: flex;
+
+}
+li a{
+  text-decoration: none;
+  color: #212738;
+  padding: 0.55em 20px;
+  font-size: 0.7em;
+}
+li a:hover {
+  background-color: white;
+  color: #1B998B;
+}
+  
+}
+}
+
+
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet" type="text/css">
+
+<navbar id='navbar'>
+  <ul>
+    <li><a href="#welcome-section" class='nav-link'>About</a></li>
+    <li><a href="#projects" class='nav-link'>Projects</a></li>
+    <li><a href="#contact" class='nav-link'>Contact</a></li>
+  </ul>
+</navbar>
+
+<section id='welcome-section'>
+  <div id="spaaace"> </div>
+  <h1> Hi! My name is Cristina </h1>
+  <div id='spaace'></div>
+  <p id='intro-text'> I'm a biomedical engineer who loves learning new stuff.</p> 
+  <p id='intro-text'>I really enjoy analyzing data and now I'm learning about web developing.</p>
+</section>
+<section id='projects'>
+  <div id='spaace'> </div>
+  <h2 id='project-title'>These are some of my projects</h2>
+  <div id='spaace'> </div>
+  <div id='spaace'> </div>
+  
+  <div id='display-projects'>
+  <div id='spaace'> </div>
+  
+  <div id='aproject' class='project-tile'>
+    <a href='https://codepen.io/ctrlcat/full/ExPpRzx' target="_blank"> <img id='project-img' alt='Face masks product page' src='https://lh3.googleusercontent.com/ZzwG3JCB978EsIgdUF0uSJgziqegFZJHBMT1HdjC2YpIyZcTKZlr1X0tkxUmvRCCtwP-CfQi0MDL5QsgQy2i68RMKN71V02PX2U8_vkKuWuAnnnD8H7Rqh3P5AcY5i9yAjYk3mwDPs9KObwCgsIC1q93-F3BNvxVkc3fp9NxwupYTNy9EpGdl1tLV7PYSb9spNRU8m5gLh001My5tln9LsROz6dXU0tHXT255uFMndxAOa0HEyyfDBGHMJz0N0RBAzhvM3nboAL9_WkULez9aHPEj6baYYp2Rqb0eI5ig3Shb1gPekASyUHLUDYXsdSy966NqkZ9pwFs1IgzFbY-KmOreBrRBMXtOk58piBwJ3Vln8kgri9Y7Pf9ojW4tDwmOZX1AXW7TOo2vSrFjdMdva0uCcSDYNX-IgikJbr9T3RAiZmK3T8ystrrwSULkhtj8c3N_HhJIz_P9hYC8i7PUYS5dBpbpUzZQwOKiKtxqYgLyFjlYYVG3JpZNkJqacI0jgBbEQqACEuo9pfiHJKBlLyyG4XZVeQo5kDU3CYrBEEO1swXhue1bkM2Bu28gxQaWr_yGILdt0bm5icFsmKEaFIiGX3jqzlLkmrVUINCF3m4EkVzqdxOmgQtMi4-iCGtm9O2FjJeO3LIHbcnyJW0ktcCXmTCTbFw3kPdiwVlPHOqIMbKLw_x0JfxTQzB=w709-h567-no?authuser=0'></a></br>
+    <a href='https://codepen.io/ctrlcat/full/ExPpRzx' id='project-name' target="_blank"><p>Face mask information</p> </a>
+  </div>
+<div id='spaace'> </div>
+
+  <div id='aproject' class='project-tile'>
+    <a href='https://codepen.io/ctrlcat/full/LYGdXEd' target="_blank"> <img id='project-img' alt='Tribute page to a dog' src='https://lh3.googleusercontent.com/WWfr2aLz7rk_LTMbmh8IAbcPol3Caq63I_lDnSNZhqWCQ2W-KdVG1li1d9RX98rmCXRMSHtIR5Q1fIDIEBbBFJRS2SrFK7yf55QwWBKh--gWGC5zf5wNS_VBeI8Zatbos-iFPQ1XeRePbIvead0NBSpZTN2DsLGjdfCcExTzzOODPen34E5Z2P5wc--vUouzzRntVm-Q0cJYxpNq95p5Ww00zy1fI4YBE2bbKtFN-dc5BKe8-Kv1cqGf1iH5g4x55z6BBYiO9wVmyRobVyEBmTludmnA6yZWTd-AChcNp6BGFnYQjX8z-0IOjdEZz1-mPCDkKUwbZV_kQAVnRATVjIAT6qE2SfuGdkRIWVa-D-5Iers5UbnrMcnfT8O1cOBPJMYzcAd_yQBHF_1Cl4YaMM-N_3f-iOG6X8ADLWTzOJam9Ik-u_MKCtEc58OHQvZ-FOEgejP-mEVtP8a61DSaHBO6vnu7Ef6qtqrXA6h9zroUxsyrel3E2zdDYZRLNUF8Yl8KUpwCrd06JA3LMYIaYjY7T-GlrJ78XL8wQhdI8XKsJr89A907bcC4K2Y8BcZyMpB5Ng587cORY1GKwf3o-CSmFW7AHPWeBq3h-XTMitS2Dr7yPwTeOWmVy4DscWC0t29A7UxC2t2jUDa5BJxexhzDjVv_EySjYwil_JCON8iBuAjMzbdpAB9vXvMZ=w709-h567-no?authuser=0'></a></br>
+    <a href='https://codepen.io/ctrlcat/full/LYGdXEd' id='project-name' target="_blank"><p>Tribute page</p> </a>
+  </div>
+<div id='spaace'> </div>
+
+  <div id='aproject' class='project-tile' style='grid-row-start: 3; grid-column-start: 2'>
+    <a href='https://codepen.io/ctrlcat/full/YzwLwyK' target="_blank"> <img id='project-img' alt='Survey form page' src='https://lh3.googleusercontent.com/9Tp3vYcOyVmUGtQiR1Uc6-kjHjCncGqRLrZqGQt_kd7BW4Mrx4rebLWlBM6CJ9Hyp3JL1htC31ALWogh2yMzYV6OIr3dQ6D4K8cRWcWKtU6PI3-9HGjWEXPQCi5IbwGa0JK8WJO8QWrd6zkD1qiyreZHFiFnUWA-_Y2lTQ4--Rt8WKaQipxp8RhRHtmQg1MJr0daJKGLQwTsJXk9o1o4kcHEiLCY61mPmKgBXfR0nJBDFrkjZSfvAdlop1g2wICSKn2M1sb96FRdG8e4TgkffxmYd8pjl9oi56TWDXWs6hSbXjPRcd80Vx1VlMJWRErjAEnQjxudMCpdC0CHlwTCZr-8pAHB8fHFSBVMyNPtaqyr3BRGN2J0JdzmiON2RF_n5dHFprrxUSw4Fyw31uZxsf5ST234hlWgxnitBo1U8LPUx4N6ZMR7lZLhZNqNh3ZGKycImspb8UcrM9PKeoI0ydjywk7PWpt4j80UoqX5gnJqEkxYI0d3bU-QzcVggIwqV4gAQjt0jto1WMs4P2cli-x6dGSNwHK3IP9XqHR0ax0vQjEdeg2r_ho-9tJcLwxZPVj-hHVDvBVwzRjKsKdJ8Uacsi-P1uQGqoHPaXdwsM6ctm2G__vnDJWPojFSm0g2gvpkt31tKNjy6C1Mld0EnZdXcnElxksed1yAdCcA6euTfEjc1SjffY8CqzDW=w708-h567-no?authuser=0'></a></br>
+    <a href='https://codepen.io/ctrlcat/full/YzwLwyK' id='project-name' target="_blank"><p>Survey form</p></a>
+  </div>
+<div id='spaace'> </div>
+
+  <div id='aproject' class='project-tile' style='grid-row-start: 3; grid-column-start: 4;'>
+    <a href='https://codepen.io/ctrlcat/full/LYGKGOM' target="_blank"> <img id='project-img' alt='JavaScript documentation page' src='https://lh3.googleusercontent.com/vQT1iMio3UrX0A2TAEbAuK3nO2zq1c0hoiIrptmmscnuWYZH2O6yXjyf1JtCRum7GgvzUoFK3TqvDwyv4rwovvP4NCN1CuJ3Kprmo71Hot2f-ZPZW3TRfPq9D99HY0I8h2vy5aegZ3n_q8w_VLmiQrH7461zRLl6o1Y75K6YFN-yhqmVdf_aHz7IlmL3jQ4VnQNBfXGeAkD4LPB8N7cQs9_OGok_HXfG9J4P7GgYUs1pEh6cwY9oG1KqQr6LDIkhtFVgfOuEaJU-0v__-J2_Mj5siIgtWM8XuMcbN--Nc4htLAL4uY5kGNWHApEVke1WwErKHpxwR9KCcV0L5EuY585LEHxA3TMqgL5YIQelBrqudLZSZh6llIvGuM7Rfhrh0OSd91XKHOfqnJ2EFzpFMPE003gWs8kI6MJD5_UDWiBpoyCMdhe-I8heUSSLP7XQLsnxhDd8jOanp5cw0WncBzUpJ46jZ5MhSq4IHD8WBSAhsIqYQwPVvJcFs3H0RNuzrEGtwCG6T-E_PGmPyNhexOKK7DKK_Lcw_EpYR2EQYZy40s6r1AfuJE3-NOcMMxgJfLJ30HdtPiWVl5-fIM2nf-v0Z9-0n1ZZP95NoUm15CSmRmscS689tZ6f2u8weQxSOj7omH7x2Gfq5pl1uHOVLkZAluCoqN4GX94uQrXRkJZrG5vJSv0aVYuMVyO1=w709-h567-no?authuser=0'></a></br>
+    <a href='https://codepen.io/ctrlcat/full/LYGKGOM' id='project-name' target="_blank"><p>Documentation page</p> </a>
+  </div>
+  
+  </div>
+<div id='spaace'> </div>
+</section>
+
+
+<section id='contact'>
+  <div id="spaaace"> </div>
+  <h2 id='info'>Let's talk!</h2>
+  <div id="spaace"> </div>
+  <a id='profile-link' href='https://www.freecodecamp.org/ctrlcat' target="_blank"> FreeCodeCamp</a>
+  <a id='profile-link' href='https://github.com/CTRLCAT' target="_blank"> GitHub</a>
+  <a id='profile-link' href='www.linkedin.com/in/cristina-acevedo' target="_blank"> LinkedIn</a>
+</section>
