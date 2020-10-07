@@ -1,0 +1,176 @@
+
+    * {
+  margin: 0 !important;
+  font-size: 20px;
+  font-family: Arial
+}
+#welcome-section{
+  height: 100vh;
+  background: #159957; 
+  background: -webkit-linear-gradient(to right, #159957, #155799); 
+  background: linear-gradient(to right, #159957, #155799);
+}
+
+#navbar{
+  position: fixed;
+  width: 100%;
+}
+ul{
+  background-color: #FFD23F;
+  list-style-type: none;
+  padding: 1.2em;
+  
+}
+li{
+  display: inline;
+}
+li a{
+  text-decoration: none;
+  color: #212738;
+  padding: 1.25em 20px;
+}
+li a:hover {
+  background-color: white;
+  color: #1B998B;
+}
+h1{
+  text-align: center;
+  margin: auto;
+  font-size: 3em;
+  font-family: Raleway, Arial;
+  color: #F08700;
+}
+#intro-text{
+  text-align: center;
+  margin: auto;
+  font-family: Arimo, Arial;
+  color: #FFB400;
+}
+#spaaace{
+  height: 50%;
+}
+#projects{
+  padding: 1.5em;
+  text-align: center;
+  background: rgb(255,210,63);
+background: linear-gradient(180deg, rgba(255,210,63,1) 0%, rgba(255,255,255,1) 76%, rgba(255,255,255,1) 100%);
+  
+}
+#display-projects{
+  display: grid;
+  grid-template-columns: 5vw 40vw 5vw 40vw;
+  grid-template-rows: 500px 30px 500px;
+}
+
+h2{
+  text-align: center;
+  Font-family: Thasadith;
+}
+#spaace{
+  height: 30px;
+}
+
+#project-name{
+  text-align: center;
+  text-decoration: none;
+  padding-bottom: 1.5em;
+  color: white;
+}
+#aproject{
+  background: rgb(21,153,87);
+background: linear-gradient(180deg, rgba(21,153,87,1) 0%, rgba(21,87,153,1) 100%);
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  
+}
+img{
+  width: 80%;
+  padding: 1.5em;
+  border-radius: 40px;
+}
+#contact{
+  height: 100vh;
+  background: #F49F0A;
+  text-align: center;
+  margin: auto;
+}
+#profile-link{
+  text-decoration: none;
+  padding: 1.5em;
+  color: white;
+}
+#profile-link:hover{
+  animation-name: move;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+@keyframes move {
+    100% {
+      color: #1B998B;
+      font-size: 1.2em;
+    }
+}
+
+#info{
+  font-size: 3em;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  #welcome-section{
+    height: 150vh;
+  }
+#display-projects{
+  display: flex;
+  flex-direction: column;
+}
+#aproject{
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  
+}
+#contact{
+  display: flex;
+  flex-direction: column;
+}
+#profile-link{
+  padding: 0.5em;
+}
+  
+#navbar{
+  position: fixed;
+  width: 40%;
+  opacity: 0.4;
+  
+}
+ul{
+  background-color: #FFD23F;
+  list-style-type: none;
+  padding: 0.5em;
+  
+  
+}
+li{
+  display: flex;
+
+}
+li a{
+  text-decoration: none;
+  color: #212738;
+  padding: 0.55em 20px;
+  font-size: 0.7em;
+}
+li a:hover {
+  background-color: white;
+  color: #1B998B;
+}
+  
+}
